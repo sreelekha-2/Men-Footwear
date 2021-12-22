@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deliver</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur page">
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styling.css">
+       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+    
+    </head>
+    <body>
+       
+        <main>
+            <header>
+                <nav class="navbar">
+                
+                    <img src="MyImages/shop-logo.jpg" class="logo">
+                    <div class="navitems-container">
+                        <li class="nav-item"><a href="index.html" class="item">Home</a></li>
+                        <li class="nav-item"><a href="Footwear.html" class="item">Footwear</a></li>  
+                        <li class="nav-item"><a href="DeliverPayment.html" class="item">Deliver & Payment</a></li>
+                        <li class="nav-item"><a href="AboutUs.html" class="item">About Us</a></li>
+                        <li class="nav-item"><a href="#footer" class="item">Follow Us</a></li>
+                        <li class="cart-icon-container nav-item"><i class="fas fa-shopping-cart cart-icon" id="cartImg"><sup id="supele">0</sup></i></a></li>
+                        
+    
+                    </div>               
+    
+                </nav>
+            </header>
+
+            <section class="payment-section">
+            <h1>Deliver and Payment Details</h1>
+            <form action="Result.html" id="form" novalidate>
+                <table>
+                    <tr>
+                        <td><label for="delAddress">Add Your Delivery Address</label></td>
+                        <td><input type="text" id="delAddress" placeholder="eg:1-41,city"></td>
+    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="errMsg1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobileNo">Add Mobile No</label></td>
+                        <td><input type="text" id="mobileNo"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="errMsg2"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Payment Method</label></td>
+                        <td><input type="radio" id="debitCard" name="myradio"><label for="debitCard">Debit/Credit card</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img src="MyImages/visa-1.png" class="card-logo"><img src="MyImages/master-card.png" class="card-logo"><img src="MyImages/rupay.png" class="card-logo"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" id="netBank" name="myradio"><label for="netBank">Net Banking</label></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" id="cod" name="myradio"><label for="cod">Cash On Delivery</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" id="upi" name="myradio"><label for="upi">UPI</label></td>
+                
+                    </tr>
+                    <tr><td></td><td id="errMsg3"></td></tr>
+                         
+                </table>
+                <input type="submit" value="Proceed Now">
+               
+            </form>
+            </section>
+            <footer id="footer">
+                <section class="footer-icons">
+                    <section class="icon-container">
+                    
+                        <i class="fab fa-facebook-f"></i>
+                    </section>
+                    <section class="icon-container">
+                        <i class="fab fa-twitter"></i>
+                    </section>
+                    <section class="icon-container">
+                        <i class="fab fa-instagram"></i>
+                    </section> 
+                    <section class="icon-container">
+                        <i class="fab fa-google"></i>
+                    </section> 
+                </section>
+                <section class="address-section">
+                    <p class="mail">menfootware@orders.com</p>
+                    <p class="address">Chilakala Guda,Secundarabad,,Hyderabad, Telanagana,|| 500-000,support(9876543210)</p>
+                </section>
+               
+                    
+                
+                   
+                
+            </footer>
+        </main>
+        <script src="MyJSFiles/PaymentForm.js"></script>
+    </body>
+</html>

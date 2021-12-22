@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Footwear</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur page">
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styling.css">
+       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    </head>
+    <body>
+       
+        <main>
+            <header>
+                <nav class="navbar">
+                
+                    <img src="MyImages/shop-logo.jpg" class="logo">
+                    <div class="navitems-container">
+                        <li class="nav-item"><a href="index.html" class="item">Home</a></li>
+                        <li class="nav-item"><a href="Footwear.html" class="item">Footwear</a></li>
+                        <li class="nav-item"><a href="DeliverPayment.html" class="item">Deliver & Payment</a></li>
+                        <li class="nav-item"><a href="AboutUs.html" class="item">About Us</a></li>
+                        <li class="nav-item"><a href="#footer" class="item">Follow Us</a></li>
+                        <li class="cart-icon-container nav-item"><a href="#showContainer"><i class="fas fa-shopping-cart cart-icon" id="cartImg"><sup id="supele">0</sup></i></a></li>
+                        
+    
+                    </div>               
+    
+                </nav>
+            </header>
+
+            
+
+            <section>
+                <h1>Men Shoes</h1>
+                <section class="shoes-section">
+                    <div class="image-card" id="shoe1">
+                        <img src="MyImages/nike-1.jfif" class="longwalk-img">
+                        <p>Nike branded Casual shoe for men</p>
+                        <p>Rs.499</p>
+                        <p>COLOR:Black</p>
+                        <label for="options1">Size:</label>
+                        <select id="options1" onchange="getValue(options1)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(shoe1)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                    <div class="image-card" id="shoe2">
+                        <img src="MyImages/longwalk-men-sneaker.jpg" class="longwalk-img">
+                        <p>Long walk Sneakers for men </p>
+                        <p>Rs.399</p>
+                        <p>COLOR:Black</p>
+                        <label for="options2">Size:</label>
+                        <select id="options2" onchange="getValue(options2)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(shoe2)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                    <div class="image-card" id="shoe3">
+                        <img src="MyImages/climb-shoes.jpeg" class="longwalk-img">
+                        <p>Men climb shoes</p>
+                        <p><b>Rs.899</b></p>
+                        <p>COLOR:Black</p>
+                        <label for="options3">Size:</label>
+                        <select id="options3" onchange="getValue(options3)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(shoe3)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                    <div class="image-card" id="shoe4">
+                        <img src="MyImages/nike-3.jfif" class="longwalk-img">
+                        <p>Nike branded men casual shoe</p>
+                        <p><b>Rs.699</b></p>
+                        <p>COLOR:Grey</p>
+                        <label for="options4">Size:</label>
+                        <select id="options4" onchange="getValue(options4)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" id="cartbtn4" onclick="addToCart(shoe4)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                    <div class="image-card" id="shoe5">
+                        <img src="MyImages/dancing-walking-sneakers.jpeg" class="longwalk-img">
+                        <p>Dancing walking sneakers for men</p>
+                        <p><b>Rs.999</b></p>
+                        <p>COLOR:White</p>
+                        <label for="options5">Size:</label>
+                        <select id="options5" onchange="getValue(options5)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(shoe5)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                   
+                    
+                </section>
+
+                <h1>Men Sandals</h1>
+                <section class="sandals-section">
+                    <div class="image-card" id="sandal1">
+                        <img src="MyImages/fishermen-sandal.jpg" class="longwalk-img">
+                        <p>Men's Fishermen Sandal</p>
+                        <p><b>Rs.349</b></p>
+                        <p>COLOR:Black</p>
+                        <label for="options6">Size:</label>
+                        <select id="options6" onchange="getValue(options6)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(sandal1)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="sandal2">
+                        <img src="MyImages/lee-peeter-tan-original.jpeg" class="longwalk-img">
+                        <p>Lee Peeter Men Tan Sandal</p>
+                        <p><b>Rs.449</b></p>
+                        <p>COLOR:Gold</p>
+                        <label for="options7">Size:</label>
+                        <select id="options7" onchange="getValue(options7)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(sandal2)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="sandal3">
+                        <img src="MyImages/sandal-1-flite.jpg" class="longwalk-img">
+                        <p>FLITE Men's outdoor sandals</p>
+                        <p><b>Rs.399</b></p>
+                        <p>COLOR:Brown</p>
+                        <label for="options8">Size:</label>
+                        <select id="options8" onchange="getValue(options8)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(sandal3)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="sandal4">
+                        <img src="MyImages/vkc-pride-navy-blue.jpg" class="longwalk-img">
+                        <p>VKC Pride Blue Outdoor Sandals</p>
+                        <p><b>Rs.349</b></p>
+                        <p>COLOR:Blue</p>
+                        <label for="options9">Size:</label>
+                        <select id="options9" onchange="getValue(options9)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(sandal4)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="sandal5">
+                        <img src="MyImages/walkaroo-grey-sandal.jpeg" class="longwalk-img">
+                        <p>Walkaroo Men Grey Sandal</p>
+                        <p><b>Rs.349</b></p>
+                        <p>COLOR:Grey</p>
+                        <label for="options10">Size:</label>
+                        <select id="options10" onchange="getValue(options10)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(sandal5)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+
+                </section>
+                <h1>Men Flipflops</h1>
+                <section class="flipflops-section">
+                    
+                    <div class="image-card" id="flipflop1">
+                        <img src="MyImages/beonza-flipflop.jpg" class="longwalk-img">
+                        <p>BEONZA Men flipflop slippers</p>
+                        <p><b>Rs.559</b></p>
+                        <p>COLOR:White</p>
+                        <label for="options11">Size:</label>
+                        <select id="options11" onchange="getValue(options11)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(flipflop1)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="image-card" id="flipflop2">
+                        <img src="MyImages/ecoslide-antiskid-flipflop.jpg" class="longwalk-img">
+                        <p>Neeman's antiskid Men flipflops</p>
+                        <p><b>Rs.1099</b></p>
+                        <p>COLOR:Black</p>
+                        <label for="options12">Size:</label>
+                        <select id="options12" onchange="getValue(options12)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(flipflop2)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="image-card" id="flipflop3">
+                        <img src="MyImages/minisa-home-flipflop.jpg" class="longwalk-img">
+                        <p>MINISA washroom Men flipflops</p>
+                        <p><b>Rs.259</b></p>
+                        <p>COLOR:Blue</p>
+                        <label for="options13">Size:</label>
+                        <select id="options13" onchange="getValue(options13)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(flipflop3)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="flipflop4">
+                        <img src="MyImages/flip-flop1.jpg" class="longwalk-img">
+                        <p>4STEP Comfortable flipflops for Men</p>
+                        <p><b>Rs.599</b></p>
+                        <p>COLOR:White</p>
+                        <label for="options14">Size:</label>
+                        <select id="options14" onchange="getValue(options14)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(flipflop4)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+
+                    <div class="image-card" id="flipflop5">
+                        <img src="MyImages/deny-brown-grey-black-original.jpeg" class="longwalk-img">
+                        <p>Deny branded Men's Lining Flipflops</p>
+                        <p><b>Rs.799</b></p>
+                        <p>COLOR:Grey</p>
+                        <label>Size:</label>
+                        <select id="options15" onchange="getValue(options15)">
+                            
+                            <option value="SELECT">Select</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                        <div class="buttons-container">
+                            <button class="cart-button" onclick="addToCart(flipflop5)">Add To Cart</button>
+                            <a href="DeliverPayment.html"><button class="buy-button" >Buy Now</button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <h1>CART</h1>
+                <section id="showContainer">
+                </section>
+            </section>
+            <footer id="footer">
+                <section class="footer-icons">
+                    <section class="icon-container">
+                    
+                        <i class="fab fa-facebook-f"></i>
+                    </section>
+                    <section class="icon-container">
+                        <i class="fab fa-twitter"></i>
+                    </section>
+                    <section class="icon-container">
+                        <i class="fab fa-instagram"></i>
+                    </section> 
+                    <section class="icon-container">
+                        <i class="fab fa-google"></i>
+                    </section> 
+                </section>
+                <section class="address-section">
+                    <p class="mail">menfootware@orders.com</p>
+                    <p class="address">Chilakala Guda,Secundarabad,,Hyderabad, Telanagana || 500-000,support(9876543210)</p>
+                </section>   
+            </footer>
+        </main>
+        <script src="MyJSFiles/footwear.js"></script>
+
+    </body>
+</html>
